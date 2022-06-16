@@ -28,7 +28,7 @@
 
 ### I am a Full Stack (Web) Developer <img src="https://github.com/MrPotato-04/MrPotato-04/blob/main/skeleton-smash.gif?raw=true" width="30">
 
-- :telescope: I’m working as a Software Engineer and mostly do web and game-dev.
+- :telescope: I’m  a Software Engineer who mostly focuses Web and somtimes game-dev.
 
 - :book: Studying at ROC van Flevoland Almere Buiten.
 
