@@ -65,11 +65,18 @@
 
 ---
 
-### :fire: My Stats :
+### :fire: My Stats
 
 <p align="center">
-  <a align="centree" href="https://github.com/MrPotato-04">
+  <a align="centre" href="https://github.com/MrPotato-04">
     <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=MrPotato-04&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=MrPotato-04&layout=compact&langs_count=8&theme=tokyonight"/>
+  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=MrPotato-04&layout=compact&langs_count=10&theme=tokyonight"/>
 </a>
+</p>
+
+---
+
+### :computer: Current Project
+<p align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/pin/?username=MrPotato-04&repo=fps-game-godot&layout=compact&theme=tokyonight"/>
 </p>
