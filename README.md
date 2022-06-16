@@ -78,5 +78,7 @@
 
 ### :computer: Current Project
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/pin/?username=MrPotato-04&repo=fps-game-godot&layout=compact&theme=tokyonight"/>
+  <a href=""https://github.com/MrPotato-04/fps-game-godot>
+    <img height="180em" src="https://github-readme-stats.vercel.app/api/pin/?username=MrPotato-04&repo=fps-game-godot&layout=compact&theme=tokyonight"/>
+  </a>
 </p>
