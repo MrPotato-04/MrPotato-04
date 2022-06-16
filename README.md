@@ -26,7 +26,7 @@
 
 ## 👨‍💻 About me
 
-#### I am a Full Stack (Web) Developer <img src="https://github.com/MrPotato-04/MrPotato-04/blob/main/skeleton-smash.gif?raw=true" width="30">
+### I am a Full Stack (Web) Developer <img src="https://github.com/MrPotato-04/MrPotato-04/blob/main/skeleton-smash.gif?raw=true" width="30">
 
 - :telescope: I’m working as a Software Engineer and mostly do web and game-dev.
 
