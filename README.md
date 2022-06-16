@@ -24,9 +24,9 @@
 
 ---
 
-### 👨‍💻 About me
+## 👨‍💻 About me
 
-##### I am a Full Stack (Web) Developer <img src="https://github.com/MrPotato-04/MrPotato-04/blob/main/skeleton-smash.gif?raw=true" width="30">
+#### I am a Full Stack (Web) Developer <img src="https://github.com/MrPotato-04/MrPotato-04/blob/main/skeleton-smash.gif?raw=true" width="30">
 
 - :telescope: I’m working as a Software Engineer and mostly do web and game-dev.
 
@@ -38,7 +38,7 @@
 
 ---
 
-### :hammer_and_wrench: Languages and Tools
+## :hammer_and_wrench: Languages and Tools
 
 <div>
   <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="60" height="60"/> 
@@ -65,7 +65,7 @@
 
 ---
 
-### :fire: My Stats
+## :fire: My Stats
 
 <p align="center">
   <a align="centre" href="https://github.com/MrPotato-04">
@@ -76,7 +76,7 @@
 
 ---
 
-### :computer: Current Project
+## :computer: Current Project
 <p align="center">
   <a href="https://github.com/MrPotato-04/fps-game-godot">
     <img height="180em" src="https://github-readme-stats.vercel.app/api/pin/?username=MrPotato-04&repo=fps-game-godot&layout=compact&theme=tokyonight"/>
