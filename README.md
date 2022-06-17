@@ -66,8 +66,8 @@
 
 <p align="center">
   <a align="centre" href="https://github.com/MrPotato-04">
-    <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=MrPotato-04&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=MrPotato-04&layout=compact&langs_count=10&theme=tokyonight"/>
+    <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=MrPotato-04&show_icons=true&theme=nord&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=MrPotato-04&exclude_repo=Unity-Challenges&layout=compact&langs_count=10&theme=nord"/>
 </a>
 </p>
 
@@ -76,6 +76,6 @@
 ## :computer: Current Project
 <p align="center">
   <a href="https://github.com/MrPotato-04/fps-game-godot">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/pin/?username=MrPotato-04&repo=fps-game-godot&layout=compact&theme=tokyonight"/>
+    <img height="180em" src="https://github-readme-stats.vercel.app/api/pin/?username=MrPotato-04&repo=fps-game-godot&layout=compact&theme=nord"/>
   </a>
 </p>
