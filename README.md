@@ -67,7 +67,7 @@
 <p align="center">
   <a align="centre" href="https://github.com/MrPotato-04">
     <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=MrPotato-04&show_icons=true&theme=nord&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=MrPotato-04&exclude_repo=Unity-Challenges&layout=compact&langs_count=10&theme=nord"/>
+  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=MrPotato-04&layout=compact&langs_count=10&theme=nord"/>
 </a>
 </p>
 
