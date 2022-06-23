@@ -1,5 +1,6 @@
-
+  
 <div id="header" align="center">
+  
   <h1>Hey there
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30" heigth="30"/>
 </h1>
@@ -15,7 +16,6 @@
           <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Twitter Badge"/>
         </a>
 </div>
-  <img src="https://komarev.com/ghpvc/?username=MrPotato-04&style=flat-square&color=blue" alt=""/>
 
 </div>
 
@@ -79,3 +79,6 @@
     <img height="180em" src="https://github-readme-stats.vercel.app/api/pin/?username=MrPotato-04&repo=fps-game-godot&layout=compact&theme=nord"/>
   </a>
 </p>
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=MrPotato-04&style=flat-square&color=blue" alt=""/>
+</div>
