@@ -82,3 +82,7 @@
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=MrPotato-04&style=flat-square&color=blue" alt=""/>
 </div>
+<div align="center">
+  <a href="https://github.com/MrPotato-04/MrPotato-04/files/9014253/CV_huidig.pdf" download>My CV</a>
+</div>
+
