@@ -73,7 +73,6 @@
 
 ---
 
-## :page_with_curl: 
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=MrPotato-04&style=flat-square&color=blue" alt=""/>
 </div>
