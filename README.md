@@ -29,7 +29,7 @@
 
 - :book: Studying at ROC van Flevoland Almere Buiten.
 
-- 🏢 Currently at an internship at Jaspers Media
+<!-- - 🏢 Currently at an internship at Jaspers Media -->
 
 - :recycle: I'm a Professional ~~copy paster~~ Code recycler.
 
