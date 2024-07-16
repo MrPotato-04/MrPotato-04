@@ -12,7 +12,7 @@
         <a href="https://discordapp.com/users/449245292492095498">
           <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Youtube Badge"/>
         </a>
-        <a href="@mailto:mrpotato.04.contact@gmail.com">
+        <a href="mailto:mrpotato.04.contact@gmail.com">
           <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Twitter Badge"/>
         </a>
 </div>
