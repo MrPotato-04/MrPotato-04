@@ -1,14 +1,17 @@
-<svg fill="none" viewBox="0 0 600 300" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 1080 1080" width="1080" height="1080" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%;">
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One" rel="stylesheet" />
       <style>
+        :root {
+          --solar-system-size: 1000px;
+          --scale: calc(var(--solar-system-size) / 200px);
+        }
+
         * {
           box-sizing: border-box;
-
-
           font-family: "Rubik Mono One", monospace;
           font-weight: 400;
           font-style: normal;
@@ -16,60 +19,29 @@
 
         .wrapper {
           display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          height: 300px;
-
-          padding: 10px;
-
-          background: black;
-        }
-
-        .container {
-          --color-main: #BADA55;
-          --color-primary: #4CAF50;
-          --color-secondary: #8FBC8F;
-          --color-tertiary: #2E8B57;
-
-          background-image: radial-gradient(var(--color-main), var(--color-primary), var(--color-secondary));
-          animation: border 5s linear infinite;
-          background-size: 200% 200%;
-
-          border-color: var(--color-background);
-
-          width: 100%;
-          height: 100%;
-
-          padding: 4px;
-
-        }
-
-        .inner {
-          background-color: black;
-          width: 100%;
-          height: 100%;
-
-          position: relative;
-
-          display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          color: white;
-
-          text-align: center;
+          width: 100%;
+          height: 100%;
+          padding: 10px;
+          background: black;
         }
 
-        .vibration span {
+        /* Base neon style for all letters */
+        .neon-letter {
           transition: all 500ms;
-          color: rgba(255, 255, 255, 0.8);
           display: inline-block;
           margin-right: 10px;
-          text-shadow: 1px 2px 3px #999;
+          text-shadow:
+            0 0 5px currentColor,
+            0 0 10px currentColor,
+            0 0 15px currentColor,
+            0 0 20px currentColor;
+          animation: neon-flicker 2s infinite alternate;
         }
 
-        .vibration span:hover {
+        .neon-letter:hover {
           filter: blur(3px);
           animation: vibrate 50ms linear infinite forwards;
         }
@@ -84,93 +56,238 @@
           }
         }
 
-        .inner span.title {
+        @keyframes neon-flicker {
+
+          0%,
+          18%,
+          22%,
+          25%,
+          53%,
+          57%,
+          100% {
+            text-shadow:
+              0 0 5px currentColor,
+              0 0 10px currentColor,
+              0 0 15px currentColor,
+              0 0 20px currentColor;
+          }
+
+          20%,
+          24%,
+          55% {
+            text-shadow: none;
+          }
+        }
+
+        /* Name styling - cyan/blue neon */
+        .name .neon-letter {
+          color: #00FFFF;
+          font-size: 1.5rem;
+        }
+
+        /* Solar system styling */
+        .solar-system {
+          position: relative;
+          width: var(--solar-system-size);
+          height: var(--solar-system-size);
           display: flex;
-          flex-direction: row;
           justify-content: center;
           align-items: center;
-          gap: 10px;
         }
 
-        /*Waves*/
-        .reveal {
-          color: #fff;
-          -webkit-transition: all 400ms;
-          transition: all 400ms;
-        }
-
-        .reveal span {
-          display: inline-block;
-          -webkit-transition: all 400ms;
-          transition: all 400ms;
-        }
-
-        .reveal span:after {
-          content: 'maakt uitgeven makkelijk';
+        .orbit {
           position: absolute;
-          font-size: 20px;
-          font-weight: 700;
-          bottom: -10px;
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          border-radius: 50%;
+          animation: rotate linear infinite;
+          /* top: 50%;
           left: 50%;
-          width: 200px;
-          text-align: center;
-          opacity: 0;
-          -webkit-transform: translateX(-50%) scale(0);
-          transform: translateX(-50%) scale(0);
-          -webkit-transition: all 400ms;
-          transition: all 400ms;
+          transform: translate(-50%, -50%); */
         }
 
-        .reveal:hover {
-          color: rgba(255, 255, 255, 0.1);
-        }
-
-        .reveal:hover span {
-          -webkit-transform: scale(2);
-          transform: scale(2);
-          color: #fff;
-          margin: 0 45px;
-        }
-
-        .reveal:hover span:after {
-          opacity: 1;
-          -webkit-transform: translateX(-50%) scale(1);
-          transform: translateX(-50%) scale(1);
-        }
-
-
-        .inner span.title p span {
-          font-size: 1.5rem;
-          color: #BADA55 !important;
-          text-shadow: 1px 2px 3px #505a30;
-        }
-
-        .meme {
+        .planet {
           position: absolute;
-          bottom: 0;
-          left: 0;
+          border-radius: 50%;
+          top: 50%;
+          left: 50%;
         }
 
-        img.meme {
-          width: 60px;
-          height: auto;
+        .sun {
+          width: calc(9px * var(--scale));
+          height: calc(9px * var(--scale));
+          background: radial-gradient(circle, #FFA500, #FF4500);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: 50%;
+          box-shadow: 0 0 calc(12px * var(--scale)) #FFA500;
+        }
+
+        .mercury {
+          width: calc(18px * var(--scale));
+          height: calc(18px * var(--scale));
+          animation-duration: 4s;
+        }
+
+        .mercury .planet {
+          width: calc(2.25px * var(--scale));
+          height: calc(2.25px * var(--scale));
+          background: #8C7853;
+          transform: translate(-50%, -50%) translateX(calc(9px * var(--scale)));
+        }
+
+        .venus {
+          width: calc(24px * var(--scale));
+          height: calc(24px * var(--scale));
+          animation-duration: 7s;
+        }
+
+        .venus .planet {
+          width: calc(3px * var(--scale));
+          height: calc(3px * var(--scale));
+          background: #FFC649;
+          transform: translate(-50%, -50%) translateX(calc(12px * var(--scale)));
+        }
+
+        .earth {
+          width: calc(30px * var(--scale));
+          height: calc(30px * var(--scale));
+          animation-duration: 10s;
+        }
+
+        .earth .planet {
+          width: calc(3px * var(--scale));
+          height: calc(3px * var(--scale));
+          background: #6B93D6;
+          transform: translate(-50%, -50%) translateX(calc(15px * var(--scale)));
+        }
+
+        .mars {
+          width: calc(36px * var(--scale));
+          height: calc(36px * var(--scale));
+          animation-duration: 15s;
+        }
+
+        .mars .planet {
+          width: calc(2.25px * var(--scale));
+          height: calc(2.25px * var(--scale));
+          background: #C1440E;
+          transform: translate(-50%, -50%) translateX(calc(18px * var(--scale)));
+        }
+
+        .jupiter {
+          width: calc(48px * var(--scale));
+          height: calc(48px * var(--scale));
+          animation-duration: 25s;
+        }
+
+        .jupiter .planet {
+          width: calc(6px * var(--scale));
+          height: calc(6px * var(--scale));
+          background: #D8CA9D;
+          transform: translate(-50%, -50%) translateX(calc(24px * var(--scale)));
+        }
+
+        .saturn {
+          width: calc(60px * var(--scale));
+          height: calc(60px * var(--scale));
+          animation-duration: 35s;
+        }
+
+        .saturn .planet {
+          width: calc(4.5px * var(--scale));
+          height: calc(4.5px * var(--scale));
+          background: #FAD5A5;
+          transform: translate(-50%, -50%) translateX(calc(30px * var(--scale)));
+        }
+
+        .uranus {
+          width: calc(75px * var(--scale));
+          height: calc(75px * var(--scale));
+          animation-duration: 45s;
+        }
+
+        .uranus .planet {
+          width: calc(3.75px * var(--scale));
+          height: calc(3.75px * var(--scale));
+          background: #4FD0E7;
+          transform: translate(-50%, -50%) translateX(calc(37.5px * var(--scale)));
+        }
+
+        .neptune {
+          width: calc(90px * var(--scale));
+          height: calc(90px * var(--scale));
+          animation-duration: 55s;
+        }
+
+        .neptune .planet {
+          width: calc(3.75px * var(--scale));
+          height: calc(3.75px * var(--scale));
+          background: #4B70DD;
+          transform: translate(-50%, -50%) translateX(calc(45px * var(--scale)));
+        }
+
+        @keyframes rotate {
+          from {
+            transform: rotate(0deg);
+          }
+
+          to {
+            transform: rotate(360deg);
+          }
         }
       </style>
 
       <div class="wrapper">
-        <div class="container">
-          <div class="inner">
-            <h2 class="vibration"><span>A</span><span>N</span><span>T</span><span>O</span><span>N</span>
-              <span>S</span><span>I</span><span>M</span><span>O</span><span>N</span><span>S</span>
-            </h2>
-            <span class="title">Dotnet Developer at <p class="vibration">
-                <span>P</span><span>U</span><span>B</span><span>B</span><span>L</span><span>E</span>
-              </p></span>
-            <div class="meme">
-<!--               <img src="https://github.com/MrPotato-04/MrPotato-04/blob/main/images/skeleton-smash.gif?raw=true"
-                class="meme" /> -->
+        <h2 class="name">
+          <span class="neon-letter">A</span>
+          <span class="neon-letter">N</span>
+          <span class="neon-letter">T</span>
+          <span class="neon-letter">O</span>
+          <span class="neon-letter">N</span>
+          <span class="neon-letter"> </span>
+          <span class="neon-letter">S</span>
+          <span class="neon-letter">I</span>
+          <span class="neon-letter">M</span>
+          <span class="neon-letter">O</span>
+          <span class="neon-letter">N</span>
+          <span class="neon-letter">S</span>
+        </h2>
 
-            </div>
+        <div class="solar-system">
+          <div class="sun"></div>
+
+          <div class="orbit mercury">
+            <div class="planet"></div>
+          </div>
+
+          <div class="orbit venus">
+            <div class="planet"></div>
+          </div>
+
+          <div class="orbit earth">
+            <div class="planet"></div>
+          </div>
+
+          <div class="orbit mars">
+            <div class="planet"></div>
+          </div>
+
+          <div class="orbit jupiter">
+            <div class="planet"></div>
+          </div>
+
+          <div class="orbit saturn">
+            <div class="planet"></div>
+          </div>
+
+          <div class="orbit uranus">
+            <div class="planet"></div>
+          </div>
+
+          <div class="orbit neptune">
+            <div class="planet"></div>
           </div>
         </div>
       </div>
