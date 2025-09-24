@@ -3,16 +3,17 @@
     <div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%;">
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Orbitron" rel="stylesheet" />
       <style>
         :root {
           --solar-system-size: 1000px;
-          --scale: calc(var(--solar-system-size) / 200px);
+          --scale: calc(var(--solar-system-size) / 100px);
         }
 
         * {
           box-sizing: border-box;
-          font-family: "Rubik Mono One", monospace;
+          font-family: "Orbitron", sans-serif;
+          font-optical-sizing: auto;
           font-weight: 400;
           font-style: normal;
         }
@@ -26,6 +27,17 @@
           height: 100%;
           padding: 10px;
           background: black;
+        }
+
+        .name {
+          position: fixed;
+          bottom: 0;
+          width: max-content;
+          left: 100%;
+          transform: translateX(-110%);
+          z-index: 10;
+          user-select: none;
+          color: white;
         }
 
         /* Base neon style for all letters */
@@ -146,7 +158,7 @@
         .venus .planet {
           width: calc(3px * var(--scale));
           height: calc(3px * var(--scale));
-          background: #FFC649;
+          background: #FFB649;
           transform: translate(-50%, -50%) translateX(calc(12px * var(--scale)));
         }
 
@@ -159,7 +171,7 @@
         .earth .planet {
           width: calc(3px * var(--scale));
           height: calc(3px * var(--scale));
-          background: #6B93D6;
+          background: #4F94CD;
           transform: translate(-50%, -50%) translateX(calc(15px * var(--scale)));
         }
 
@@ -172,7 +184,7 @@
         .mars .planet {
           width: calc(2.25px * var(--scale));
           height: calc(2.25px * var(--scale));
-          background: #C1440E;
+          background: #CD5C5C;
           transform: translate(-50%, -50%) translateX(calc(18px * var(--scale)));
         }
 
@@ -185,7 +197,7 @@
         .jupiter .planet {
           width: calc(6px * var(--scale));
           height: calc(6px * var(--scale));
-          background: #D8CA9D;
+          background: #DAA520;
           transform: translate(-50%, -50%) translateX(calc(24px * var(--scale)));
         }
 
@@ -224,7 +236,7 @@
         .neptune .planet {
           width: calc(3.75px * var(--scale));
           height: calc(3.75px * var(--scale));
-          background: #4B70DD;
+          background: #4169E1;
           transform: translate(-50%, -50%) translateX(calc(45px * var(--scale)));
         }
 
