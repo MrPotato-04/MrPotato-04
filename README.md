@@ -1,5 +1,5 @@
 <div style="width: 100%;">
-  <img src="https://github.com/MrPotato-04/MrPotato-04/images/banner.svg" style="width: 100%;" alt="Click to see the source">
+  <img src="https://github.com/MrPotato-04/MrPotato-04/blob/main/images/banner.svg" style="width: 100%;" alt="Click to see the source">
 </div> 
 <!-- <p align="center">
   <a align="centre" href="https://github.com/MrPotato-04">
